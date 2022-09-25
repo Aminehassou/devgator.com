@@ -54,7 +54,7 @@ class About extends Component {
                   data-aos-delay="100"
                 >
                   <img
-                    src="/images/digital-marketing/about-img.png"
+                    src="/images/about-img.png"
                     className="main-pic"
                     alt="image"
                   />

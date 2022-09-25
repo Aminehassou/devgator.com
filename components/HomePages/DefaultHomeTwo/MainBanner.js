@@ -1,9 +1,4 @@
 import React, { Component } from "react";
-import Link from "next/link";
-import dynamic from "next/dynamic";
-const ModalVideo = dynamic(() => import("react-modal-video"), {
-  ssr: false,
-});
 
 class MainBanner extends Component {
   state = {
@@ -51,14 +46,6 @@ class MainBanner extends Component {
             </div>
           </div>
         </div>
-
-        {/* If you want to change the video need to update below videoID */}
-        <ModalVideo
-          channel="youtube"
-          isOpen={this.state.isOpen}
-          videoId="_ysd-zHamjk"
-          onClose={() => this.setState({ isOpen: false })}
-        />
       </>
     );
   }

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 class Footer extends Component {
   render() {
@@ -15,11 +14,10 @@ class Footer extends Component {
                   <div className="logo">
                     <Link href="/">
                       <a>
-                        <Image
+                        <img
                           src="/images/logo_transparent_bg.png"
                           alt="logo"
                           width={160}
-                          height={48}
                         />
                       </a>
                     </Link>
