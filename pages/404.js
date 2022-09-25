@@ -1,26 +1,21 @@
-import React, { Component } from 'react';
-import NavbarTwo from '../components/Layouts/NavbarTwo';
-import PageBanner from '../components/Common/PageBanner';
-import ErrorContent from '../components/Error/ErrorContent';
-import Footer from '../components/Layouts/Footer';
+import React, { Component } from "react";
+import Navbar from "../components/Layouts/Navbar";
+import PageBanner from "../components/Common/PageBanner";
+import ErrorContent from "../components/Error/ErrorContent";
+import Footer from "../components/Layouts/Footer";
 
 class Error extends Component {
-    render() {
-        return (
-            <>
-                <NavbarTwo />
-                
-                <PageBanner 
-                    pageTitle="404 Error" 
-                    BGImage="bg-three"
-                />  
+  render() {
+    return (
+      <>
+        <Navbar />
 
-                <ErrorContent />
+        <ErrorContent />
 
-                <Footer />
-            </>
-        );
-    }
+        <Footer />
+      </>
+    );
+  }
 }
 
 export default Error;

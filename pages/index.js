@@ -18,13 +18,7 @@ class Index extends Component {
 
         <Services />
 
-        {/* <CtaArea /> */}
-
         <About />
-
-        {/* <OurWorks /> */}
-
-        {/* <Team /> */}
 
         <ContactForm />
 
