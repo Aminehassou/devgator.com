@@ -3,12 +3,11 @@ import axios from "axios";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 const MySwal = withReactContent(Swal);
-import baseUrl from "../../utils/baseUrl";
 
 const alertContent = () => {
   MySwal.fire({
     title: "Congratulations!",
-    text: "Your message was successfully send and will back to you soon",
+    text: "Your message was successfully sent and we will get back to you soon!",
     icon: "success",
     timer: 2000,
     timerProgressBar: true,
@@ -35,9 +34,15 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = `${baseUrl}/api/contact`;
+      const url = `https://submit-form.com/GGC3ssQ4`;
       const { name, email, number, subject, text } = contact;
-      const payload = { name, email, number, subject, text };
+      const payload = {
+        message: text,
+        from: email,
+        subject: subject,
+        phone: number,
+        name: name,
+      };
       const response = await axios.post(url, payload);
       console.log(response);
       setContact(INITIAL_STATE);
@@ -92,7 +97,6 @@ const ContactForm = () => {
                     className="form-control"
                     value={contact.number}
                     onChange={handleChange}
-                    required
                   />
                 </div>
               </div>
