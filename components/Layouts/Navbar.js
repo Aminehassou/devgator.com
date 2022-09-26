@@ -44,7 +44,7 @@ class Navbar extends Component {
                   <img
                     src="/images/logo_transparent_bg.png"
                     alt="logo"
-                    width={241}
+                    width={215}
                   />
                 </a>
               </Link>
